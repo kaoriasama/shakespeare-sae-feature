@@ -1,0 +1,66 @@
+# Methods
+
+This study observes sparse-autoencoder feature landscapes across 38 Shakespeare plays. Folger TEI is converted into reader-facing chunks that retain speaker labels and stage directions; feature activity is then summarized at token, chunk, and work levels, and six layers are selected through explanation search followed by positive-logit inspection.
+
+## チャンク化の表象原則
+
+読者は台詞の前に話者名に接するため、話者名は付随メタデータではなく表象の一部として扱う。ト書きも同様に本文へ残す。話者名・ト書きを除去する代わりに、話者数、話者交替回数、話者エントロピーなどを窓ごとの共変量として記録する。
+
+## Folger印刷版に準拠した書式
+
+- 話者名は `HAMLET.` のように大文字とピリオドで表す。
+- entrance、exit、delivery、business、modifier、location、mixed、dumbshow を含む全種類のト書きを角括弧で本文へ埋め込み、TEIの文書順を保つ。
+
+## 窓の8規則
+
+上限を1,400字とし、次の規則で連続する発話と発話外ト書きを窓へまとめる。
+
+1. チャンクは連続する発話と発話外ト書きの並びとする。
+2. 1発話は原則としてチャンク境界をまたがない。
+3. 場の末尾で必ず切り、場をまたがない。
+4. 場冒頭から発話を追加し、上限に達した場合は一つ手前の発話境界で切る。
+5. 1発話だけで上限を超える場合に限り、発話内で分割する。
+6. 分割位置は、韻文では詩行末、散文では文末とする。
+7. 各分割断片の先頭に、話者名とその発話に付随するト書きを再び置く。
+8. メタデータへ `speech_split=k/n` を記録する。
+
+## 派生話者名の5ルール
+
+`<sp>` に非空の `<speaker>` がない場合だけ、次の順で最初に一致する規則を適用する。既存の非空話者名は変更しない。
+
+1. 直近の祖先区画が `epilogue` なら `EPILOGUE.`。
+2. 直近の祖先区画が `prologue` または `chorus` なら `CHORUS.`。
+3. `who` に空白区切りの複数IDがあれば `ALL.`。
+4. `who` が単一IDなら、先頭の `#` と末尾の作品略号を除いて大文字化し、ピリオドを付ける。
+5. `who` が空または存在しなければ `WITHIN.`。
+
+全38作品での派生は16件で、内訳は `EPILOGUE.` 3件、`CHORUS.` 2件、`ALL.` 2件、`MUSICIANS.` 3件、`BOY.` 2件、`WITHIN.` 4件である。
+
+## 対象規模
+
+対象はFolger TEIの全38作品である。総発話数は31,906、発話長の中央値は111字、95パーセンタイルは731字、最大は4,466字である。1,400字を超える発話は412件（1.29%）で、例外分割規則を適用する。発話の99%は単独で窓へ収まり、通常は一つのチャンクに複数発話が入る。
+
+## 発火の3段階定義
+
+1. トークンで発火: SAE出力が正の値であること。
+2. チャンク発火率: チャンク内で発火したトークンの割合。
+3. 作品で発火: その作品のいずれかのチャンクで発火率が0より大きいこと。
+
+## 作品分布の三分類と表の5列目
+
+各特徴を、全38作品で発火する「全作品」、1〜37作品で発火する「一部作品」、どの作品でも発火しない「不在」に分類する。表の5列目は、作品ごとに所属チャンクの発火率を平均し、その作品内平均発火率が全38作品のすべてで0.5を超える特徴の数である。
+
+## 層選定手続き
+
+説明文検索でShakespeare、演劇、古語に関係する候補を抽出し、説明ラベルだけでは採用せず、各候補のpositive logitsが意味的に対応するかを実体確認した。その後、序盤・中盤・終盤の観測点として、Gemma 2ではL4・L11・L22、Gemma 3ではL9・L17・L29を採用した。
+
+## 採用した6マーカー
+
+| モデル・層 | 特徴ID | ラベル |
+|---|---:|---|
+| G2 L4 | 7718 | 多言語の演劇・悲劇 |
+| G2 L11 | 6671 | 著名固有名詞一般 |
+| G2 L22 | 9813 | Shakespeareと作品名 |
+| G3 L9 | 7715 | theater and plays |
+| G3 L17 | 9814 | shakespearean language |
+| G3 L29 | 11332 | archaic english forms |

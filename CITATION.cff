@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this software and dataset. The paper citation will be added when available."
+title: "Shakespeare SAE Feature Landscape"
+authors:
+  - family-names: Asama
+    given-names: Kaori
+    affiliation: The University of Tokyo
+  - family-names: Ohmukai
+    given-names: Ikki
+    affiliation: The University of Tokyo
+year: 2026

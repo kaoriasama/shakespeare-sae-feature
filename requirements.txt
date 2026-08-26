@@ -1,0 +1,5 @@
+# Python 3.9+
+# Analysis
+numpy==2.0.2
+
+# Pipeline execution additionally requires: torch>=2.8, transformers>=4.50, safetensors

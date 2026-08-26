@@ -1,0 +1,7 @@
+﻿model,layer,n_partial,n_patterns,n_shared_ge2,n_shared_ge5,n_shared_ge10,n_singlework_patterns,top_single_work,top_single_n,n_complement37_patterns,top_complement_missing,top_complement_n,n_shared_mid_4_31,genre_set_found
+g2,4,4021,3413,133,49,19,38,Cor,13,38,Err,36,2,none
+g2,11,5138,4249,160,66,44,38,AYL,16,38,Err,41,1,none
+g2,22,6462,5278,220,65,31,35,Ham,22,38,Err,89,6,none
+g3,9,5922,4870,204,67,45,38,H5,26,38,Mac,44,3,none
+g3,17,5604,4353,224,75,53,38,Ham,50,38,Mac,49,1,none
+g3,29,7284,5889,276,81,37,38,Ham,29,38,Err,90,8,none

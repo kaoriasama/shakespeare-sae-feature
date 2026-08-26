@@ -1,0 +1,462 @@
+{
+  "generated_at": "2026-07-31T02:27:17.412780+00:00",
+  "n_plays": 38,
+  "n_chunks": 4600,
+  "n_speeches_total": 31906,
+  "n_speeches_split": 160,
+  "max_chunk_chars": 1400,
+  "chunks_over_1400": 0,
+  "per_play": {
+    "1H4": {
+      "genre": "history",
+      "n_chunks": 131,
+      "n_speeches": 777,
+      "max_speech_chars": 2579,
+      "n_speeches_split": 9,
+      "ftln_range": [
+        "1.1.1",
+        "5.5.46"
+      ]
+    },
+    "1H6": {
+      "genre": "history",
+      "n_chunks": 119,
+      "n_speeches": 662,
+      "max_speech_chars": 1708,
+      "n_speeches_split": 2,
+      "ftln_range": [
+        "1.1.1",
+        "5.5.108"
+      ]
+    },
+    "2H4": {
+      "genre": "history",
+      "n_chunks": 147,
+      "n_speeches": 902,
+      "max_speech_chars": 2102,
+      "n_speeches_split": 12,
+      "ftln_range": [
+        "IND.1",
+        "EPI.36"
+      ]
+    },
+    "2H6": {
+      "genre": "history",
+      "n_chunks": 140,
+      "n_speeches": 791,
+      "max_speech_chars": 2250,
+      "n_speeches_split": 6,
+      "ftln_range": [
+        "1.1.1",
+        "5.3.34"
+      ]
+    },
+    "3H6": {
+      "genre": "history",
+      "n_chunks": 139,
+      "n_speeches": 813,
+      "max_speech_chars": 3040,
+      "n_speeches_split": 8,
+      "ftln_range": [
+        "1.1.1",
+        "5.7.47"
+      ]
+    },
+    "AWW": {
+      "genre": "comedy",
+      "n_chunks": 117,
+      "n_speeches": 937,
+      "max_speech_chars": 1340,
+      "n_speeches_split": 0,
+      "ftln_range": [
+        "1.1.1",
+        "EPI.6"
+      ]
+    },
+    "AYL": {
+      "genre": "comedy",
+      "n_chunks": 110,
+      "n_speeches": 815,
+      "max_speech_chars": 1347,
+      "n_speeches_split": 0,
+      "ftln_range": [
+        "1.1.1",
+        "EPI.22"
+      ]
+    },
+    "Ado": {
+      "genre": "comedy",
+      "n_chunks": 108,
+      "n_speeches": 978,
+      "max_speech_chars": 1542,
+      "n_speeches_split": 2,
+      "ftln_range": [
+        "1.1.1",
+        "5.4.133"
+      ]
+    },
+    "Ant": {
+      "genre": "tragedy",
+      "n_chunks": 137,
+      "n_speeches": 1179,
+      "max_speech_chars": 970,
+      "n_speeches_split": 0,
+      "ftln_range": [
+        "1.1.1",
+        "5.2.437"
+      ]
+    },
+    "Cor": {
+      "genre": "tragedy",
+      "n_chunks": 149,
+      "n_speeches": 1107,
+      "max_speech_chars": 2310,
+      "n_speeches_split": 5,
+      "ftln_range": [
+        "1.1.1",
+        "5.6.185"
+      ]
+    },
+    "Cym": {
+      "genre": "tragedy",
+      "n_chunks": 151,
+      "n_speeches": 857,
+      "max_speech_chars": 1954,
+      "n_speeches_split": 7,
+      "ftln_range": [
+        "1.1.1",
+        "5.5.586"
+      ]
+    },
+    "Err": {
+      "genre": "comedy",
+      "n_chunks": 75,
+      "n_speeches": 609,
+      "max_speech_chars": 2656,
+      "n_speeches_split": 3,
+      "ftln_range": [
+        "1.1.1",
+        "5.1.441"
+      ]
+    },
+    "H5": {
+      "genre": "history",
+      "n_chunks": 153,
+      "n_speeches": 739,
+      "max_speech_chars": 2869,
+      "n_speeches_split": 18,
+      "ftln_range": [
+        "PRO.1",
+        "5.EPI.14"
+      ]
+    },
+    "H8": {
+      "genre": "history",
+      "n_chunks": 132,
+      "n_speeches": 710,
+      "max_speech_chars": 2384,
+      "n_speeches_split": 4,
+      "ftln_range": [
+        "PRO.1",
+        "EPI.14"
+      ]
+    },
+    "Ham": {
+      "genre": "tragedy",
+      "n_chunks": 162,
+      "n_speeches": 1138,
+      "max_speech_chars": 2486,
+      "n_speeches_split": 9,
+      "ftln_range": [
+        "1.1.1",
+        "5.2.449"
+      ]
+    },
+    "JC": {
+      "genre": "tragedy",
+      "n_chunks": 104,
+      "n_speeches": 796,
+      "max_speech_chars": 1715,
+      "n_speeches_split": 2,
+      "ftln_range": [
+        "1.1.1",
+        "5.5.87"
+      ]
+    },
+    "Jn": {
+      "genre": "history",
+      "n_chunks": 115,
+      "n_speeches": 550,
+      "max_speech_chars": 1781,
+      "n_speeches_split": 4,
+      "ftln_range": [
+        "1.1.1",
+        "5.7.124"
+      ]
+    },
+    "LLL": {
+      "genre": "comedy",
+      "n_chunks": 107,
+      "n_speeches": 1049,
+      "max_speech_chars": 2106,
+      "n_speeches_split": 2,
+      "ftln_range": [
+        "1.1.1",
+        "5.2.1003"
+      ]
+    },
+    "Lr": {
+      "genre": "tragedy",
+      "n_chunks": 132,
+      "n_speeches": 1064,
+      "max_speech_chars": 1109,
+      "n_speeches_split": 0,
+      "ftln_range": [
+        "1.1.1",
+        "5.3.395"
+      ]
+    },
+    "MM": {
+      "genre": "comedy",
+      "n_chunks": 109,
+      "n_speeches": 901,
+      "max_speech_chars": 1718,
+      "n_speeches_split": 1,
+      "ftln_range": [
+        "1.1.1",
+        "5.1.613"
+      ]
+    },
+    "MND": {
+      "genre": "comedy",
+      "n_chunks": 83,
+      "n_speeches": 505,
+      "max_speech_chars": 1569,
+      "n_speeches_split": 1,
+      "ftln_range": [
+        "1.1.1",
+        "5.1.455"
+      ]
+    },
+    "MV": {
+      "genre": "comedy",
+      "n_chunks": 110,
+      "n_speeches": 634,
+      "max_speech_chars": 2052,
+      "n_speeches_split": 5,
+      "ftln_range": [
+        "1.1.1",
+        "5.1.329"
+      ]
+    },
+    "Mac": {
+      "genre": "tragedy",
+      "n_chunks": 96,
+      "n_speeches": 649,
+      "max_speech_chars": 1544,
+      "n_speeches_split": 2,
+      "ftln_range": [
+        "1.1.1",
+        "5.8.88"
+      ]
+    },
+    "Oth": {
+      "genre": "tragedy",
+      "n_chunks": 131,
+      "n_speeches": 1182,
+      "max_speech_chars": 1876,
+      "n_speeches_split": 2,
+      "ftln_range": [
+        "1.1.1",
+        "5.2.435"
+      ]
+    },
+    "Per": {
+      "genre": "tragicomedy",
+      "n_chunks": 108,
+      "n_speeches": 639,
+      "max_speech_chars": 2471,
+      "n_speeches_split": 6,
+      "ftln_range": [
+        "1.CHO.1",
+        "EPI.18"
+      ]
+    },
+    "R2": {
+      "genre": "history",
+      "n_chunks": 126,
+      "n_speeches": 555,
+      "max_speech_chars": 2854,
+      "n_speeches_split": 6,
+      "ftln_range": [
+        "1.1.1",
+        "5.6.52"
+      ]
+    },
+    "R3": {
+      "genre": "history",
+      "n_chunks": 158,
+      "n_speeches": 1078,
+      "max_speech_chars": 1946,
+      "n_speeches_split": 8,
+      "ftln_range": [
+        "1.1.1",
+        "5.5.41"
+      ]
+    },
+    "Rom": {
+      "genre": "tragedy",
+      "n_chunks": 133,
+      "n_speeches": 841,
+      "max_speech_chars": 2177,
+      "n_speeches_split": 8,
+      "ftln_range": [
+        "PRO.1",
+        "5.3.321"
+      ]
+    },
+    "Shr": {
+      "genre": "comedy",
+      "n_chunks": 110,
+      "n_speeches": 895,
+      "max_speech_chars": 1920,
+      "n_speeches_split": 2,
+      "ftln_range": [
+        "IND.1.1",
+        "5.2.206"
+      ]
+    },
+    "TGV": {
+      "genre": "comedy",
+      "n_chunks": 95,
+      "n_speeches": 858,
+      "max_speech_chars": 1978,
+      "n_speeches_split": 4,
+      "ftln_range": [
+        "1.1.1",
+        "5.4.186"
+      ]
+    },
+    "TN": {
+      "genre": "comedy",
+      "n_chunks": 97,
+      "n_speeches": 926,
+      "max_speech_chars": 2042,
+      "n_speeches_split": 1,
+      "ftln_range": [
+        "1.1.1",
+        "5.1.431"
+      ]
+    },
+    "TNK": {
+      "genre": "tragicomedy",
+      "n_chunks": 141,
+      "n_speeches": 840,
+      "max_speech_chars": 3158,
+      "n_speeches_split": 10,
+      "ftln_range": [
+        "PRO.1",
+        "EPI.20"
+      ]
+    },
+    "Tim": {
+      "genre": "tragedy",
+      "n_chunks": 100,
+      "n_speeches": 801,
+      "max_speech_chars": 2127,
+      "n_speeches_split": 2,
+      "ftln_range": [
+        "1.1.1",
+        "5.4.100"
+      ]
+    },
+    "Tit": {
+      "genre": "tragedy",
+      "n_chunks": 110,
+      "n_speeches": 568,
+      "max_speech_chars": 2066,
+      "n_speeches_split": 2,
+      "ftln_range": [
+        "1.1.1",
+        "5.3.202"
+      ]
+    },
+    "Tmp": {
+      "genre": "comedy",
+      "n_chunks": 85,
+      "n_speeches": 647,
+      "max_speech_chars": 2756,
+      "n_speeches_split": 1,
+      "ftln_range": [
+        "1.1.1",
+        "EPI.20"
+      ]
+    },
+    "Tro": {
+      "genre": "tragedy",
+      "n_chunks": 141,
+      "n_speeches": 1145,
+      "max_speech_chars": 2659,
+      "n_speeches_split": 4,
+      "ftln_range": [
+        "PRO.1",
+        "5.11.59"
+      ]
+    },
+    "WT": {
+      "genre": "comedy",
+      "n_chunks": 124,
+      "n_speeches": 747,
+      "max_speech_chars": 1966,
+      "n_speeches_split": 1,
+      "ftln_range": [
+        "1.1.1",
+        "5.3.192"
+      ]
+    },
+    "Wiv": {
+      "genre": "comedy",
+      "n_chunks": 115,
+      "n_speeches": 1022,
+      "max_speech_chars": 1651,
+      "n_speeches_split": 1,
+      "ftln_range": [
+        "1.1.1",
+        "5.5.254"
+      ]
+    }
+  },
+  "per_genre": {
+    "tragedy": {
+      "n_plays": 12,
+      "n_chunks": 1546,
+      "total_chars": 1693937
+    },
+    "comedy": {
+      "n_plays": 14,
+      "n_chunks": 1445,
+      "total_chars": 1647001
+    },
+    "history": {
+      "n_plays": 10,
+      "n_chunks": 1360,
+      "total_chars": 1433722
+    },
+    "tragicomedy": {
+      "n_plays": 2,
+      "n_chunks": 249,
+      "total_chars": 247511
+    }
+  },
+  "stage_type_totals": {
+    "business": 2268,
+    "delivery": 2294,
+    "dumbshow": 1,
+    "entrance": 2420,
+    "exit": 2269,
+    "location": 83,
+    "mixed": 188,
+    "modifier": 708,
+    "none": 2
+  }
+}
