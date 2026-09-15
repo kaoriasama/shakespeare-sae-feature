@@ -15,7 +15,7 @@ This repository contains data and code for mapping sparse-autoencoder (SAE) feat
 
 ## Data availability
 
-The firing and mean-activation matrices (`*.npz`) and the summary database are distributed through Zenodo: [10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX). Download the matrix files and place them in `activations_v2/` before running the analysis scripts.
+The firing and mean-activation matrices (`*.npz`) and the summary database are distributed through Zenodo: [10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.22112879). Download the matrix files and place them in `activations_v2/` before running the analysis scripts.
 
 ## Reproduction
 
