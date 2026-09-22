@@ -1,6 +1,7 @@
 cff-version: 1.2.0
-message: "Please cite this software and dataset. The paper citation will be added when available."
+message: "If you use this dataset or code, please cite it as below. The paper citation will be added when available."
 title: "Shakespeare SAE Feature Landscape"
+type: dataset
 authors:
   - family-names: Asama
     given-names: Kaori
@@ -8,4 +9,12 @@ authors:
   - family-names: Ohmukai
     given-names: Ikki
     affiliation: The University of Tokyo
-year: 2026
+doi: 10.5281/zenodo.22112879
+license:
+  - MIT
+  - CC-BY-NC-4.0
+keywords:
+  - Shakespeare
+  - sparse autoencoder
+  - mechanistic interpretability
+  - digital humanities
