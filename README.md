@@ -15,7 +15,7 @@ This repository contains data and code for mapping sparse-autoencoder (SAE) feat
 
 ## Data availability
 
-The firing and mean-activation matrices (`*.npz`) and the summary database are distributed through Zenodo: [10.5281/zenodo.22112879](https://doi.org/10.5281/zenodo.22112879). Download the matrix files and place them in `activations_v2/` before running the analysis scripts.
+The activation data are distributed through Zenodo: [10.5281/zenodo.22112879](https://doi.org/10.5281/zenodo.22112879). The record holds 19 files: six firing-rate matrices, six mean-activation matrices, the summary database (`features.db`), marker-feature records (`markers.json`), residual-stream samples for ten chunks per model, sanitized run metadata, SHA-256 checksums, and a README that defines every file and field. Download the twelve matrix files, and `features.db` if you want the summary views, and place them in `activations_v2/` before running the analysis scripts.
 
 ## Reproduction
 
