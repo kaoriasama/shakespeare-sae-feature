@@ -45,6 +45,42 @@ The activation data are distributed through Zenodo: [10.5281/zenodo.22112879](ht
 
 The SHA-256 prefix (first 16 hexadecimal characters) of `chunks/shakespeare_chunks_v2.csv` is `d6c48d0934a30e96`. The corresponding prefix for `tei_chunk_parser_v2.py` is `2735704efd255fd5`.
 
+## Camera-ready additions (October 2026)
+
+The following scripts and tables were added for the camera-ready version of the Jinmonkon 2026 paper. All scripts run with Python 3.9 and NumPy only, read the activation matrices and `chunks/shakespeare_chunks_v2.csv` without modifying them, and are deterministic (fixed seeds where randomness is used).
+The activation matrices read by these scripts (`activations_v2/*_firing.npz`) are distributed in the Zenodo record (https://doi.org/10.5281/zenodo.22112879), not in this repository.
+
+### Scripts (`scripts/analysis/`)
+
+| File | Purpose |
+|---|---|
+| `length_equalized_patterns.py` | Recounts the three-way classification (fires in all plays / in some / in none) and the per-play counts of single-play and complement (all-but-one-play) features after equalizing play length: every play is subsampled to the character budget of the shortest play (88,675 characters) by drawing chunks in random order until the budget is reached; 1,000 draws, seed 20261007. Also reports Spearman correlations between play length and the counts before and after equalization. |
+| `genre_proximity_step1.py` | For features firing in 8–30 plays (presence probability ≥ 0.5 under length equalization), measures the Jaccard similarity between the set of firing plays and the First Folio's comedies, histories, and tragedies, counts features with Jaccard ≥ 0.6 / 0.7 / 0.8, and compares the counts with a null distribution of 10,000 random play sets of the same sizes (seed 20261007; p = (k + 1) / 10,001, where k is the number of draws reaching the observed count). |
+| `reference_groups.json` | The three reference groupings over the 36 Folio plays (Pericles and The Two Noble Kinsmen excluded). |
+| `list_pattern_features.py` | For selected features (near a Folio genre, silent in exactly one play, or firing in exactly one play), lists the three chunks with the highest firing rate, verse/prose statistics from the chunk table, and Neuronpedia metadata (`--neuronpedia fetch` queries the public API; `cache` reads a saved JSON; `off` skips). |
+| `single_work_feature_sparsity.py` | For features firing in exactly one play, counts how many fire in only 1 / 2 / 3–5 / 6+ chunks of the whole corpus, and the median firing rate within fired chunks. |
+| `verse_index_by_work.py` | Per-play verse/prose leaning from the chunk table: character-weighted mean of `verse_ratio` (= verse lines / (verse lines + prose paragraphs)) and the shares of prose-only and verse-only chunks. |
+
+Run order: `length_equalized_patterns.py` (writes `equalized_presence_*.npz`), then `genre_proximity_step1.py`, then `list_pattern_features.py --neuronpedia cache` (requires `pattern_feature_neuronpedia.json` from the Zenodo record, https://doi.org/10.5281/zenodo.22112879). The other two scripts are independent.
+
+### Tables (`reports/`)
+
+| File | Contents |
+|---|---|
+| `length_equalized_by_work.csv` | Per layer and play: total chunks and characters, mean chunks used, and single-play / complement counts in full data and under equalization (mean, 2.5th and 97.5th percentiles). |
+| `length_equalized_classification.csv` | Per layer: three-way classification in full data and equalized means; Spearman correlations with play length. |
+| `length_equalized_samples_first3.json` | Chunk IDs drawn in the first three equalization draws, for verification. |
+| `length_equalized_reps_{model}_L{layer}.npz` | Per draw (1,000 × 38): single-play counts, complement counts, classification, chunks used. |
+| `equalized_presence_{model}_L{layer}.npz` | Per play and feature (38 × 16,384): probability of firing under equalization (`presence_prob`) and firing in full data (`presence_obs`). |
+| `genre_proximity_step1.csv`, `genre_proximity_step1_best.csv` | Proximity counts, null statistics and p-values per layer and genre; the five closest features per cell with missing and extra plays. |
+| `pattern_feature_ids.csv` | The 505 selected feature rows with firing statistics, the three strongest chunks, verse/prose statistics and Neuronpedia summary fields. |
+| `pattern_feature_excerpts.txt` | The text of the three strongest chunks for each selected feature, quoted verbatim from the Folger Shakespeare (see Source-text attribution). |
+| `single_work_feature_sparsity.csv`, `verse_index_by_work.csv` | Outputs of the two scripts above (the latter begins with comment lines defining the index). |
+
+Notes.
+- The Neuronpedia API responses used for `pattern_feature_ids.csv` (505 features, about 85 MB) are archived in the Zenodo record (https://doi.org/10.5281/zenodo.22112879) as `pattern_feature_neuronpedia.json`; Neuronpedia content may change over time, so that snapshot, not a fresh fetch, reproduces the paper.
+- `verse_ratio` in `chunks/shakespeare_chunks_v2.csv` is written at full double precision. Some spreadsheet applications import the longer decimals as text; use a CSV importer or `VALUE()` before computing with this column.
+
 ## License
 
 Code is licensed under the MIT License. Data and derived data are covered by [LICENSE-DATA.md](LICENSE-DATA.md).
