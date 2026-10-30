@@ -1,0 +1,12 @@
+{
+  "note": "Folio の3群は36作を分母（Per・TNK は Folio 外）。",
+  "all_works": ["1H4","1H6","2H4","2H6","3H6","AWW","AYL","Ado","Ant","Cor","Cym","Err","H5","H8","Ham","JC","Jn","LLL","Lr","MM","MND","MV","Mac","Oth","Per","R2","R3","Rom","Shr","TGV","TN","TNK","Tim","Tit","Tmp","Tro","WT","Wiv"],
+  "universes": {
+    "folio36": {"exclude": ["Per","TNK"]}
+  },
+  "groups": {
+    "folio_comedy":  {"universe": "folio36", "members": ["Tmp","TGV","Wiv","MM","Err","Ado","LLL","MND","MV","AYL","Shr","AWW","TN","WT"]},
+    "folio_history": {"universe": "folio36", "members": ["Jn","R2","1H4","2H4","H5","1H6","2H6","3H6","R3","H8"]},
+    "folio_tragedy": {"universe": "folio36", "members": ["Tro","Cor","Tit","Rom","Tim","JC","Mac","Ham","Lr","Oth","Ant","Cym"]}
+  }
+}
