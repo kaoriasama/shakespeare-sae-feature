@@ -1,0 +1,7 @@
+﻿model,layer,n_single_obs,n_single_obs_fired_1chunk,n_single_obs_fired_2,n_single_obs_fired_3_5,n_single_obs_fired_6plus,share_single_obs_1chunk,n_single_eq,n_single_eq_fired_1chunk,share_single_eq_1chunk,median_fr_in_fired_chunk_single_obs
+g2,4,179,157,9,8,5,0.8771,181,152,0.8398,0.002941
+g2,11,356,317,19,8,12,0.8904,360,309,0.8583,0.002881
+g2,22,154,140,7,4,3,0.9091,158,132,0.8354,0.002894
+g3,9,393,358,17,12,6,0.9109,401,351,0.8753,0.002825
+g3,17,659,596,34,17,12,0.9044,663,580,0.8748,0.002841
+g3,29,296,273,12,8,3,0.9223,298,265,0.8893,0.002869

@@ -1,0 +1,91 @@
+﻿model,layer,group,rank,feature_id,jaccard,size_in_universe,n_common,missing_works,extra_works,excluded_members_present,size_all38
+g2,4,folio_comedy,1,14859,0.529412,12,9,Err Shr TGV Tmp WT,2H4 Cym Lr,Per,13
+g2,4,folio_comedy,2,15617,0.526316,15,10,MND Shr TGV WT,2H4 Ant Cym Oth Tro,,15
+g2,4,folio_comedy,3,12596,0.523810,18,11,Ado MV TGV,1H4 Ant Cor Cym R2 R3 Tim,,18
+g2,4,folio_comedy,4,7623,0.520000,24,13,Ado,1H4 1H6 2H6 3H6 Ant Cor Cym H5 H8 Rom Tro,TNK,25
+g2,4,folio_comedy,5,2344,0.500000,22,12,MM WT,1H4 2H4 Cor H5 H8 Jn R3 Rom Tit Tro,TNK,23
+g2,4,folio_history,1,9249,0.600000,14,9,Jn,LLL Lr Oth Tit Tro,,14
+g2,4,folio_history,2,14280,0.583333,9,7,1H4 3H6 Jn,LLL Lr,,9
+g2,4,folio_history,3,1443,0.571429,12,8,2H4 Jn,AYL JC Rom Wiv,TNK,13
+g2,4,folio_history,4,12414,0.571429,12,8,2H4 H8,AWW Cym TN Tro,TNK,13
+g2,4,folio_history,5,14860,0.555556,18,10,,AYL Ado Ant LLL Lr MV TN Tro,Per,19
+g2,4,folio_tragedy,1,13002,0.611111,17,11,Mac,AWW AYL Err Jn MM MV,TNK,18
+g2,4,folio_tragedy,2,15333,0.611111,17,11,Tit,1H6 3H6 H5 LLL R2 TN,Per,18
+g2,4,folio_tragedy,3,14653,0.562500,13,9,Ant Lr Tit,AWW Err H8 R3,,13
+g2,4,folio_tragedy,4,8818,0.550000,19,11,Oth,AWW AYL H8 MND R3 TGV WT Wiv,,19
+g2,4,folio_tragedy,5,14396,0.550000,19,11,Tim,1H6 H5 Jn MM MND R2 Shr TGV,TNK,20
+g2,11,folio_comedy,1,12831,0.705882,15,12,Shr TN,Ant H8 Lr,TNK,16
+g2,11,folio_comedy,2,7916,0.600000,18,12,MV TGV,2H4 Cor H5 Oth Rom Tro,,18
+g2,11,folio_comedy,3,2830,0.565217,22,13,MND,1H6 2H6 Cym H8 Jn Oth R2 Tim Tit,,22
+g2,11,folio_comedy,4,9470,0.541667,23,13,AYL,2H4 2H6 Cor H5 Ham JC Lr Mac R3 Rom,,23
+g2,11,folio_comedy,5,15414,0.538462,26,14,,1H4 1H6 2H4 Ant Cor H5 H8 Ham Mac R3 Rom Tro,TNK,27
+g2,11,folio_history,1,12962,0.666667,15,10,,Cor Cym MND MV Tro,,15
+g2,11,folio_history,2,13897,0.562500,15,9,Jn,AWW Cor Cym Lr Mac Tit,Per,16
+g2,11,folio_history,3,7401,0.533333,13,8,2H4 R2,Ant LLL Oth TN Tit,,13
+g2,11,folio_history,4,798,0.500000,20,10,,AWW AYL Cor Ham LLL MND Oth Tit Tmp Tro,Per TNK,22
+g2,11,folio_history,5,1152,0.500000,20,10,,AWW AYL JC LLL MM MND Oth Rom TGV Tro,Per TNK,22
+g2,11,folio_tragedy,1,15267,0.588235,15,10,Ham Rom,1H6 MND Shr TN WT,Per TNK,17
+g2,11,folio_tragedy,2,12770,0.578947,18,11,Lr,1H4 2H4 AYL Err MM MND TN,TNK,19
+g2,11,folio_tragedy,3,1273,0.538462,8,7,Ant Cym Tim Tit Tro,R3,,8
+g2,11,folio_tragedy,4,4121,0.533333,11,8,Ham Lr Rom Tim,AWW Ado MND,,11
+g2,11,folio_tragedy,5,13622,0.529412,14,9,Cym Lr Mac,H5 Jn R2 R3 Tmp,,14
+g2,22,folio_comedy,1,5158,0.523810,18,11,MV TGV TN,2H4 Cor H5 Ham R2 R3 Tim,Per,19
+g2,22,folio_comedy,2,11986,0.523810,18,11,MM TN Tmp,1H4 Ant Cor Cym H5 JC Oth,TNK,19
+g2,22,folio_comedy,3,5954,0.520000,24,13,Tmp,1H4 1H6 2H4 Ham JC Jn Lr Mac Oth Rom Tro,TNK,25
+g2,22,folio_comedy,4,3660,0.500000,25,13,TN,1H4 1H6 Cor Cym H5 H8 Ham JC R2 R3 Rom Tim,TNK,26
+g2,22,folio_comedy,5,10807,0.500000,28,14,,1H4 1H6 Cor Cym H5 Ham JC Lr Mac Oth R2 Rom Tim Tit,Per TNK,30
+g2,22,folio_history,1,5710,0.636364,8,7,1H4 2H4 Jn,Rom,,8
+g2,22,folio_history,2,4133,0.615385,11,8,1H4 Jn,Ham JC Tit,,11
+g2,22,folio_history,3,2980,0.600000,14,9,R3,AYL MND Tim Tro Wiv,TNK,15
+g2,22,folio_history,4,1235,0.562500,15,9,1H4,AWW Ado Cor Cym LLL Wiv,TNK,16
+g2,22,folio_history,5,11620,0.562500,15,9,1H4,AWW AYL Err Mac Tim Wiv,TNK,16
+g2,22,folio_tragedy,1,1824,0.647059,16,11,Tit,2H6 AYL H5 LLL Tmp,TNK,17
+g2,22,folio_tragedy,2,13038,0.647059,16,11,Tim,H5 MND R3 Shr TN,Per,17
+g2,22,folio_tragedy,3,2199,0.642857,11,9,Cym Lr Oth,3H6 MND,,11
+g2,22,folio_tragedy,4,280,0.631579,19,12,,2H4 Ado MND MV TGV Tmp WT,TNK,20
+g2,22,folio_tragedy,5,7485,0.631579,19,12,,AYL Err H5 Jn R2 Shr TN,Per,20
+g3,9,folio_comedy,1,875,0.562500,11,9,AWW Err LLL MM TGV,Cym Lr,Per,12
+g3,9,folio_comedy,2,8501,0.550000,17,11,Ado Tmp WT,1H4 1H6 2H4 2H6 Cym Jn,Per TNK,19
+g3,9,folio_comedy,3,2822,0.545455,20,12,Err MV,1H4 2H4 Cor H8 Jn Lr Mac Tro,TNK,21
+g3,9,folio_comedy,4,15382,0.541667,23,13,Err,1H4 1H6 2H4 Ant Cor H8 Ham Mac Oth Rom,Per TNK,25
+g3,9,folio_comedy,5,12809,0.538462,26,14,,1H4 2H4 2H6 3H6 Cor Ham Jn Lr Oth Rom Tim Tro,,26
+g3,9,folio_history,1,13331,0.833333,12,10,,Tro Wiv,,12
+g3,9,folio_history,2,2393,0.818182,10,9,Jn,Wiv,,10
+g3,9,folio_history,3,10032,0.818182,10,9,Jn,Wiv,,10
+g3,9,folio_history,4,4019,0.692308,12,9,Jn,Ant Cor Tro,,12
+g3,9,folio_history,5,8425,0.666667,10,8,R2 R3,MM Tit,Per,11
+g3,9,folio_tragedy,1,15518,0.600000,12,9,Cor Cym JC,2H4 Ado R2,Per,13
+g3,9,folio_tragedy,2,13095,0.555556,16,10,Cym Oth,Ado Err H8 MM Shr Tmp,,16
+g3,9,folio_tragedy,3,5315,0.550000,19,11,Tro,2H6 AWW H5 MV R3 TN Tmp WT,,19
+g3,9,folio_tragedy,4,9401,0.550000,19,11,Tim,2H4 2H6 Ado H5 LLL MV Tmp WT,TNK,20
+g3,9,folio_tragedy,5,15012,0.533333,11,8,Mac Oth Rom Tro,R2 TN WT,,11
+g3,17,folio_comedy,1,13274,0.619048,20,13,Shr,1H6 Cor Cym H5 H8 Jn Oth,Per,21
+g3,17,folio_comedy,2,13670,0.600000,18,12,AWW MND,1H4 1H6 2H4 2H6 H8 Tro,Per TNK,20
+g3,17,folio_comedy,3,15712,0.600000,18,12,AYL TGV,Cym JC Jn Mac Rom Tro,,18
+g3,17,folio_comedy,4,8337,0.590909,21,13,TGV,1H4 2H4 H5 Ham Lr Mac Rom Tro,TNK,22
+g3,17,folio_comedy,5,9834,0.590909,21,13,MM,1H4 2H4 Cor H8 JC Mac Oth Rom,,21
+g3,17,folio_history,1,15585,0.750000,11,9,2H4,Ado Lr,,11
+g3,17,folio_history,2,11433,0.666667,15,10,,AWW AYL Ado Cor LLL,,15
+g3,17,folio_history,3,1709,0.642857,13,9,3H6,AWW Shr TGV Wiv,,13
+g3,17,folio_history,4,2068,0.642857,13,9,Jn,Cor JC LLL WT,,13
+g3,17,folio_history,5,1086,0.625000,16,10,,AWW Cor Cym MM MV Oth,Per,17
+g3,17,folio_tragedy,1,6180,0.588235,15,10,Oth Tro,H5 Jn LLL MND TN,,15
+g3,17,folio_tragedy,2,9802,0.571429,21,12,,1H4 2H4 H5 LLL MV TN Tmp WT Wiv,Per TNK,23
+g3,17,folio_tragedy,3,106,0.555556,16,10,Cym Tit,H5 H8 LLL MND TN Tmp,TNK,17
+g3,17,folio_tragedy,4,13730,0.538462,8,7,Ant Cor Cym Tim Tit,MV,,8
+g3,17,folio_tragedy,5,6480,0.533333,11,8,Oth Rom Tim Tro,H5 MND R3,TNK,12
+g3,29,folio_comedy,1,14740,0.619048,20,13,AWW,3H6 Cym Ham JC Lr Mac Rom,,20
+g3,29,folio_comedy,2,300,0.578947,16,11,AWW TN Wiv,2H6 Ant Cym H8 Oth,Per TNK,18
+g3,29,folio_comedy,3,3827,0.555556,14,10,AWW LLL MND WT,1H6 Cym JC Oth,,14
+g3,29,folio_comedy,4,10516,0.545455,20,12,AWW LLL,1H4 Ham JC Lr Mac Oth R3 Rom,,20
+g3,29,folio_comedy,5,8405,0.541667,23,13,Shr,1H6 2H4 3H6 Cor H5 H8 Jn Lr R2 Tim,,23
+g3,29,folio_history,1,14575,0.714286,14,10,,AWW AYL Cym TGV,Per,15
+g3,29,folio_history,2,13765,0.666667,15,10,,Ado Ant Cym Err Wiv,Per,16
+g3,29,folio_history,3,15033,0.615385,11,8,1H4 H8,MM TN Wiv,,11
+g3,29,folio_history,4,15086,0.615385,11,8,1H4 H5,LLL Oth Tim,Per,12
+g3,29,folio_history,5,1856,0.600000,14,9,R2,LLL Lr MV Mac Tit,,14
+g3,29,folio_tragedy,1,78,0.769231,11,10,Tim Tit,MND,,11
+g3,29,folio_tragedy,2,6260,0.733333,14,11,Tim,AYL MND Tmp,TNK,15
+g3,29,folio_tragedy,3,9029,0.642857,11,9,Ant Oth Tim,AYL R3,TNK,12
+g3,29,folio_tragedy,4,11617,0.642857,11,9,Cor Tit Tro,MND Tmp,,11
+g3,29,folio_tragedy,5,16256,0.642857,11,9,Cor Cym Tim,AWW TGV,,11
