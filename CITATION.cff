@@ -2,6 +2,9 @@ cff-version: 1.2.0
 message: "If you use this dataset or code, please cite it as below. The paper citation will be added when available."
 title: "Shakespeare SAE Feature Landscape"
 type: dataset
+version: "1.1.0"
+date-released: "2026-10-30"
+repository-code: "https://github.com/kaoriasama/shakespeare-sae-feature"
 authors:
   - family-names: Asama
     given-names: Kaori
@@ -18,3 +21,15 @@ keywords:
   - sparse autoencoder
   - mechanistic interpretability
   - digital humanities
+preferred-citation:
+  type: conference-paper
+  title: "言語モデルの内部処理に対する観測を通じた文学作品の特徴分析：シェイクスピア戯曲38作品を事例として"
+  authors:
+    - family-names: Asama
+      given-names: Kaori
+    - family-names: Ohmukai
+      given-names: Ikki
+  conference:
+    name: "人文科学とコンピュータシンポジウム（じんもんこん2026）"
+  year: 2026
+  status: in-press
